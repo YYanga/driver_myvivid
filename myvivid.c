@@ -38,7 +38,7 @@ static int my_vivid_vidioc_querycap(struct file *file, void  *priv,
 
 static const struct v4l2_file_operations my_vivid_fops = {
 	.owner = THIS_MODULE,
-    //.unlocked_ioctl = video_ioctl2,/* V4L2 ioctl handler */
+    	.unlocked_ioctl = video_ioctl2,/* V4L2 ioctl handler */
 };
 
 
